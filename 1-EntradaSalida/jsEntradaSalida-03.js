@@ -8,7 +8,7 @@ function mostrar()
  
  	nombreIngresado=document.getElementById('txtIdNombre').value;
 
- 	alert(nombreIngresado);
+ 	alert("Muchas Gracias " +nombreIngresado);
 
 }
 

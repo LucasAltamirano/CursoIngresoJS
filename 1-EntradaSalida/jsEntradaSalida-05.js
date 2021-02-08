@@ -4,14 +4,15 @@ ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
 	var nombreIngresado;
+		
+		nombreIngresado=document.getElementById('txtIdNombre').value
+
 	var edadIngresada;
 	
-	
-	nombreIngresado=document.getElementById('txtIdNombre').value
+		edadIngresada= document.getElementById('txtIdEdad').value
 
-	edadIngresada= document.getElementById('txtIdEdad').value
 
-	alert(" usted se llama "+nombreIngresado+ " y tiene " +edadIngresada+ " años ");
+	alert(" Usted se llama  " +nombreIngresado+ " y tiene " +edadIngresada+ " años de edad ,Muchas Gracias ");
 }
 
 /*  Lucas Javier Altamirano */

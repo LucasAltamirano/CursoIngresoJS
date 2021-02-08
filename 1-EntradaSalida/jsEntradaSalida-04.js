@@ -7,9 +7,9 @@ function mostrar()
 		var nombre;
 		var mensajeDeRespuesta
 
-		nombre=prompt();
+		nombre=prompt("ingrese su nombre completo");
 
-		mensajeDeRespuesta= "su nomnbre es : " +nombre;
+		mensajeDeRespuesta="Muchas gracias : " +nombre + " ya puede ingresar "; 
 
 		document.getElementById('txtIdNombre').value=mensajeDeRespuesta
 
