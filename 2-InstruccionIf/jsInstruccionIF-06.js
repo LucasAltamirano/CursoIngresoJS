@@ -33,10 +33,10 @@ function mostrar()
 	}
 
 		else
-		{
+		(
 
 			if(edad>18)
-		}
+		
 				alert("es mayor de edad")
 		}
 
