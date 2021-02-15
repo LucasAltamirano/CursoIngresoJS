@@ -4,46 +4,28 @@ function mostrar()
 
 
 
-{//tomo la edad 
-	var edad;
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
+{
 
-	console.log("la edad ingresada es "+ edad);//tomo la edad  
-/*
-	if(edad<13)
+	var edad
+
+	edad=parseInt(document.getElementById('txtIdEdad').value);
+
+	if (edad>17) 
+
 	{
-		alert("es menor  de edad")
-	}
-	
-	if(edad<18&&edad>12)
-	{
-		alert("es adolescente")
-	}
-				
-	if(edad>17)
-	{
-		alert("es mayor de edad")
-	}
-	*/  //una forma valida pero erronea
-
-	if(edad<13)
-	{
-		alert("es menor de edad");
-	}
-
-		else
-		(
-
-			if(edad>18)
-		
-				alert("es mayor de edad")
-		}
-
-		else
+		alert("La persona es un mayor de edad ");
+	}else
 		{
-			alert("es adolescente")
+			if (edad>12 && edad<18) 
+			{
+				alert("La persona es adolescente");
+			}else
+				{
+				alert("la persona es un niño");
+				}
+
 		}
+
+		console.log(edad)
+//tomo la edad 
 }
-//FIN DE LA FUNCIÓN
-	

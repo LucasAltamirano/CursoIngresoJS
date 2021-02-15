@@ -28,5 +28,5 @@ function mostrar()
 
 
 	}
-
+	console.log(destinoIngresado)
 }//FIN DE LA FUNCIÓN

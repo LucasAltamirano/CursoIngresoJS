@@ -36,6 +36,10 @@ function mostrar()
 
 		default:
 			alert("no existe determinada hora")
+			break;
 
+			//EL DEFAULT DEBE LLEVAR BREAK AL FINAL,
+			 // CASE: Y DEFAULT: LLEVAN DOS PUNTOS 
+			 //BREAK; LLEVA PUNTO Y COMA
 		}
 }//FIN DE LA FUNCIÓN

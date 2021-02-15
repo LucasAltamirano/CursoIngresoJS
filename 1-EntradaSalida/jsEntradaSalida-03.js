@@ -4,11 +4,11 @@ y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 
-	var nombreIngresado;
- 
- 	nombreIngresado=document.getElementById('txtIdNombre').value;
+	var nombre
 
- 	alert("Muchas Gracias " +nombreIngresado);
+	nombre =document.getElementById('txtIdNombre').value;
+
+	alert("el nombre ingresado es "	+nombre+ "  muchas gracias" )
 
 }
 

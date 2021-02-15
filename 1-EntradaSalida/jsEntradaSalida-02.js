@@ -6,11 +6,13 @@ y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 
 function mostrar()
 {
-	var nombre 
+	var diadesemana 
 	
-	nombre = prompt("por favor ingrese su nombre completo");
+	diadesemana = prompt("por favor ingrese el dia de la semana")
 
-	alert("muchas gracias " + nombre);
+	alert ("el dia de la semana es "+diadesemana )
+
+	
 
 }
 

@@ -15,9 +15,13 @@ function mostrar()
 			alert("FRIO")
 			break;
 
-		case"Cataratas":
-		case"Mar del plata":
+		/*case"Cataratas":
+		case"Mar del plata":   // otra   solucion
 			alert("CALOR")
+			break;
+			*/
+		default:
+			alert("CALOR")		// otra solucion mandando por default
 			break;
 
 

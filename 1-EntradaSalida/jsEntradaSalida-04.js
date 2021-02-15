@@ -4,14 +4,12 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-		var nombre;
-		var mensajeDeRespuesta
+	var nombre
 
-		nombre=prompt("ingrese su nombre completo");
+	nombre=prompt("Ingrese su nombre completo por favor.")
 
-		mensajeDeRespuesta="Muchas gracias : " +nombre + " ya puede ingresar "; 
+	document.getElementById('txtIdNombre').value =nombre
 
-		document.getElementById('txtIdNombre').value=mensajeDeRespuesta
 
  }
 

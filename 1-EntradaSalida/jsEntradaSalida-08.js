@@ -7,17 +7,16 @@ function SacarResto()
 {	
 	var dividendo;
 	var	divisor;
-	var resultado;
+	var resto
 
-	//dividendo=31;
-	//divisor=2;
+	dividendo=parseInt(document.getElementById('txtIdNumeroDividendo').value);
+	//numeroUno=parseInt(numeroUno)
 
-	dividendo =document.getElementById("txtIdNumeroDividendo").value;
-	divisor =document.getElementById("txtIdNumeroDivisor").value;
-	
-	resto=dividendo%divisor
-	console.log(resto)
+	divisor=parseInt(document.getElementById('txtIdNumeroDivisor').value);
+	//numeroDos=parseInt(numeroDos) EL PARSEINT LO ACHIQUE EN LA LINEA 14
 
-	alert("el resultado es " resto);
+    resto =dividendo % divisor
+    console.log(+resto)
 
+    alert(" El resto es " + resto)
 }

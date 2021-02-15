@@ -18,5 +18,5 @@ function mostrar()
 			alert("Son horas de la mañana,Buen dia !!")
 			break;
 	}
-
+	console.log(horaDelDia)
 }//FIN DE LA FUNCIÓN

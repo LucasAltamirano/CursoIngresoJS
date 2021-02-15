@@ -7,19 +7,16 @@ function sumar()
 {	
 	var numeroUno
 	var	numeroDos
-	var resultado
 
-	 numeroUno=document.getElementById("txtIdNumeroUno").value;	
-	 numeroUno=parseInt(numeroUno)
+	numeroUno=document.getElementById('txtIdNumeroUno').value;
+	numeroUno=parseInt(numeroUno)
 
-	 numeroDos=document.getElementById("txtIdNumeroDos").value;
-	 numeroDos=parseInt(numeroDos)
+	numeroDos=document.getElementById('txtIdNumeroDos').value;
+	numeroDos=parseInt(numeroDos)
 
-	 resultado= numeroUno + numeroDos
+    total=numeroUno + numeroDos
 
-	 alert("la suma es "+ resultado)
-
-
+    alert(" La suma total es " + total)
 }
 
 
@@ -28,17 +25,17 @@ function restar()
 {
 	var numeroUno
 	var	numeroDos
-	var resultado
 
-	 numeroUno=document.getElementById("txtIdNumeroUno").value;	
-	 numeroUno=parseInt(numeroUno)
+	numeroUno=document.getElementById('txtIdNumeroUno').value;
+	numeroUno=parseInt(numeroUno)
 
-	 numeroDos=document.getElementById("txtIdNumeroDos").value;
-	 numeroDos=parseInt(numeroDos)
+	numeroDos=document.getElementById('txtIdNumeroDos').value;
+	numeroDos=parseInt(numeroDos)
 
-	 resultado= numeroUno - numeroDos
+    total=numeroUno - numeroDos
 
-	 alert("la resta es "+ resultado)
+    alert(" El resultado es " + total)
+	
 
 	
 }
@@ -47,33 +44,31 @@ function multiplicar()
 { 
 	var numeroUno
 	var	numeroDos
-	var resultado
 
-	 numeroUno=document.getElementById("txtIdNumeroUno").value;	
-	 numeroUno=parseInt(numeroUno)
+	numeroUno=document.getElementById('txtIdNumeroUno').value;
+	numeroUno=parseInt(numeroUno)
 
-	 numeroDos=document.getElementById("txtIdNumeroDos").value;
-	 numeroDos=parseInt(numeroDos)
+	numeroDos=document.getElementById('txtIdNumeroDos').value;
+	numeroDos=parseInt(numeroDos)
 
-	 resultado= numeroUno * numeroDos
+    total=numeroUno * numeroDos
 
-	 alert("la multiplicacion es "+ resultado)
+    alert(" El resultado es " + total)
 }
 
 function dividir()
 {
 	var numeroUno
 	var	numeroDos
-	var resultado
 
-	 numeroUno=document.getElementById("txtIdNumeroUno").value;	
-	 numeroUno=parseInt(numeroUno)
+	numeroUno=document.getElementById('txtIdNumeroUno').value;
+	numeroUno=parseInt(numeroUno)
 
-	 numeroDos=document.getElementById("txtIdNumeroDos").value;
-	 numeroDos=parseInt(numeroDos)
+	numeroDos=document.getElementById('txtIdNumeroDos').value;
+	numeroDos=parseInt(numeroDos)
 
-	 resultado= numeroUno / numeroDos
+    total=numeroUno / numeroDos
 
-	 alert("la division es "+ resultado)
+    alert(" El resultado es " + total)
 }
 

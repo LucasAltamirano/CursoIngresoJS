@@ -1,41 +1,20 @@
 function mostrar()
 
 {
+	var edad
 
-	var edad;
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
+	edad=parseInt(document.getElementById('txtIdEdad').value);
 
-	console.log("la edad ingresada es "+ edad);
-	//tomo la edad 
-	/*
-	if(edad>17)
-	{
-		alert(" la persona es mayor de edad ")
-	}
-
-	if(edad<18)
-	{
-		alert("la persona NO es mayor de edad")
-	}
-
-	// if doble , y abajo if -else mostrando mayor practicidad 
-	*/
-	
-	if(edad>17)
-	{
-		alert(" la persona es mayor de edad ")
-	}
-
-	else
-	{
-		alert("la persona NO es mayor de edad")
-	}
+	if (edad>17)
+	 {
+	 	alert("La persona es mayor de edad")
+	 }else
+	 	{
+	 		alert("La persona es menor de edad")
+	 	}
 
 	
-	
+	 	console.log(edad)
 
-	//LUCAS ALTAMIRANO
-	
+}
 
-}//FIN DE LA FUNCIÓN

@@ -4,36 +4,28 @@
 
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
+	var nota
+	var maximo = 10
+	var minimo = 1
+	var	mensaje
 
 
-var notaRandom
-var mensaje
+	nota= Math.round(Math.random()*(maximo-minimo) + minimo)
 
-notaRandom =Math.floor(Math.random() * 10) + 1;
+	if (	nota == 9 || nota == 10)
+	 {
+	 	mensaje=( + nota + "  EXCELENTE " )
+	 }else
+	 	if(nota >4 )
+	 		{
+	 		mensaje=( + nota + " APROBADO ")
+	 		}else
+	 			{
+	 				mensaje=(+ nota + " RECURSA  ")
+	 			}
 
-	
-if (notaRandom>8)
-{
-	mensaje =("La nota es " +notaRandom+ " 	excelente ");
 
-}
+	 		alert(mensaje)
+	console.log( mensaje );
 
-else
-
-{
-
-	if(notaRandom<4)
-
-	{
-		mensaje =( " nota es " +notaRandom+ " vamos para la proxima " );
-	}
-
-		else
-	{
-
-		mensaje =("la nota es " +notaRandom+ " aprobado");
-	}
-}
-	alert(mensaje)
 }

@@ -1,36 +1,26 @@
 function mostrar()
 
 {
-	//tomo la edad 
-	var edad;
-	edad=document.getElementById('txtIdEdad').value;
-	edad=parseInt(edad);
 
-	console.log("la edad ingresada es "+ edad);
-	//tomo la edad 
-	/*
-	Uif(edad>12 )
-	{
-		if(edad<18)
-		{
-			alert("es un adolescente con " +edad+ " años de edad");
-		}
+
+
+	var edad
+
+	edad=parseInt(document.getElementById('txtIdEdad').value);
+
+	if ( edad <13 || edad > 17) //CONDICION QUE ES VERDADERA PARA LOS VALORES
+								// DE EDAD QUE ESTAN POR DEBAJO O ENCIMA DEL RANGO 13/17 
+								//(ESTOY PREGUNTANDO SI ESTOY FUERA DEL RANGO )
+	 	 {								
+			alert("La persona 	NO es adolescente");
+		 }
 	
-	{}
-	*/
-	/*if(edad<18 && edad>13)
-		{
-					alert("es un adolescente con " +edad+ " años de edad");
-		}
-	*/
-	if(edad>17||edad<13)
-	{
-		alert(" no es adolescente")
-	}
+	 	console.log(edad)
 
 
+								//(PREGUNTO SINO ESTOY DENTRO DEL RANGO )
 
-	// otra variante con && es igual a 
+	
 
 	//ALTAMIRANO LUCAS 
 //FIN DE LA FUNCIÓN

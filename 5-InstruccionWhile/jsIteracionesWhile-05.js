@@ -2,11 +2,22 @@
 Al presionar el botón pedir un sexo
 'f' para femenino, 'm' para masculino.*/
 function mostrar()
-{
-	var sexoIngresado;
-	sexoIngresado = prompt("ingrese f ó m .");
+{	
+	var sexo
+	
+	sexo=prompt ("Ingrese femenino o masculino ")
+	
+	while(sexo!= "femenino" || sexo== "masculino") 
 
-
-
-	txtIdSexo.value=sexoIngresado;
-}//FIN DE LA FUNCIÓN
+	{
+		prompt("Error ingrese nuvamente")
+	
+		if(sexo == "femenino")
+	}	
+	{
+			document.getElementById('txtIdSexo').value=femenino
+	
+	
+	}
+	
+}
