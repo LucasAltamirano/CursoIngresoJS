@@ -24,7 +24,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
      var precioFinal;  
      var ingresosBrutos; 
 
-     cantidadLamparitas = document.getElementById("txtIdCantidad").value; 
+     cantidadLamparitas = parseInt(document.getElementById("txtIdCantidad").value); 
      precioFinal = cantidadLamparitas*35; 
      
      marca = document.getElementById("Marca").value; 

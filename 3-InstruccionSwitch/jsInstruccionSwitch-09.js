@@ -84,4 +84,28 @@ function mostrar()
 	mensaje = "Su precio final es de $" + precioFinal + ""
 	 	 	 	
 	alert(mensaje)
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

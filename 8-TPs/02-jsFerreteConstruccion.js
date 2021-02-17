@@ -15,8 +15,8 @@ function Rectangulo ()
 	var	cantidadmetros
 	var	alambretotal
 
-	largo=document.getElementById('txtIdLargo').value;
-	ancho=document.getElementById('txtIdAncho').value;
+	largo=parseFloat(document.getElementById('txtIdLargo').value);
+	ancho=parseFloat(document.getElementById('txtIdAncho').value);
 
 	largo=largo* 2
 	ancho=ancho* 2
@@ -34,7 +34,7 @@ function Circulo ()
 	var	perimetro
 	var	alambretotalcir
 
-	radio=document.getElementById('txtIdRadio').value;
+	radio=parseFloat(document.getElementById('txtIdRadio').value);
 
 	diametro=radio*2
 	perimetro=diametro*3.1416
@@ -53,11 +53,11 @@ function Materiales ()
 	var	cal
 	
 
-	largo=document.getElementById('txtIdLargo').value;
-	ancho=document.getElementById('txtIdAncho').value;
+	largo=parseFloat(document.getElementById('txtIdLargo').value);
+	ancho=parseFloat(document.getElementById('txtIdAncho').value);
 
 	metroscuadrados=largo*ancho
-	cementototal= *2
+	cementototal= metroscuadrados*2
 	caltotal=metroscuadrados*3
 
 	alert("Para la construccion necesitará " +cementototal+ " bolsas de cemento y " +caltotal+ " bolsas de cal" )
