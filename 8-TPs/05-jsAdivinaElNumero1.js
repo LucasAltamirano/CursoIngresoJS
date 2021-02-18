@@ -18,7 +18,8 @@ function comenzar()
 
 
 
-	numeroSecreto=Math.floor(Math.random() * 100) + 1;
+	numeroSecreto=Math.floor(Math.random() * 100) + 1
+
 
 	console.log
 
@@ -34,5 +35,9 @@ function comenzar()
 function verificar()
 {
 	
+	var contadorIntentos
+
+	contadorIntentos=0
 	
+	contador+1
 }

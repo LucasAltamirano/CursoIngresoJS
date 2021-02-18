@@ -1,5 +1,9 @@
 
 
+
+		//ALTAMIRANO LUCAS EJERCICIO WHILE NUMERO 6
+
+
 function mostrar()
 
 {
@@ -9,15 +13,18 @@ function mostrar()
 	var	i
 	i=0;
 	acumulador=0;
-
-
+	
 	while(i<5)
 	{
-
-		numero=parseInt(prompt("Ingrese un numero"));
-
+		numero=parseInt(prompt("Ingrese un numero  #"));
+			
+		while(isNaN(numero)==true)
+		{
+			numero=parseInt(prompt("EROR :Ingrese un numero"));
+		}
 		acumulador =acumulador + numero;
 		i=i +1
+
 	}
 
 	promedio=acumulador / 5

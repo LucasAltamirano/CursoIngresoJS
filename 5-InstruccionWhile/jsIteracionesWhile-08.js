@@ -1,49 +1,64 @@
 /*
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
+
 function mostrar()
-{
-	var contador;
-	var respuesta;
-	var sumaPositivos;
-	var multiplicacionNegativos;
-	contador=0;
-	sumaPositivos=0;
-	multiplicacionNegativos=1;
-	respuesta='si';
-
-
-	txtIdSuma.value=sumaPositivos;
-	txtIdProducto.value=multiplicacionNegativos;
-
-}//FIN DE LA FUNCIÓN
-
-var numero
+{	
+	var numeroIngresado
 	var	acumulador
-	var promedio
-	var seguir
+
+	var respuesta
 	var contador
+	var banderadenegativos
+
 
 	contador=0;
-	acumulador=0;
-	seguir = 's'
+	sumapositivos=0;
+	respuesta = "si"
 
-	while(seguir=='s')
+	banderadenegativos=1
+
+	while(respuesta=="si")
 	{
-		numero= parseInt(prompt("Ingrese un numero"));
-
-		seguir=prompt("quiere ingresar otro numero?")
-		acumulador =acumulador + numero
-
+		numeroIngresado =  parseInt(prompt("Ingrese un numero"));
 		
+		while(isNaN(numeroIngresado)==true)
+		{
+			numeroIngresado=parseInt(prompt("EROR :Ingrese un numero"));
+
+		}
+
 		contador=contador+1
+		
+
+		if (numeroIngresado>-1)
+		 {
+		 	sumapositivos=sumapositivos + numeroIngresado
+		 }
+		 else
+		 {
+		 	banderadenegativos=1
+		 	 multiplicacionNegativos = multiplicacionNegativos * numero; 
+		 	 if (banderaDeNegativo==0)
+			{
+				multiplicacionNegativos = 0; 
+			}
 
 
+		 }
+
+		 
+
+
+		 
+
+			respuesta=prompt("quiere ingresar otro numero?");	
+		console.log(contador)
 	}
-		promedio=acumulador /contador
 
 
+	document.getElementById('txtIdSuma').value=sumapositivos
+	document.getElementById('txtIdProducto').value=multiplicacionNegativos
 	
 
-	document.getElementById('txtIdSuma').value=acumulador
-	document.getElementById('txtIdPromedio').value=promedio
+}//FIN DE LA FUNCIÓN

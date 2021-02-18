@@ -9,11 +9,11 @@ function mostrar()
 {
 	var claveIngresada;
 
-	claveIngresada=750
+	claveIngresada="UTN750"
 
 	claveIngresada = prompt("INGRESE EL NUMERO CLAVE");
 
-	while(claveIngresada!=750)
+	while(claveIngresada!="UTN750")
 	{
 		alert("CLAVE INCORRECTA INGRESE NUEVAMENTE")
 		claveIngresada=prompt("INGRESE EL NUMERO NUEVAMENTE")
