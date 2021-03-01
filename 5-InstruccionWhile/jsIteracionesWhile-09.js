@@ -1,92 +1,23 @@
-/*
+
 
 
 //ALTAMIRANO LUCAS EJERCICIO WHILE NUMERO 9
+//while 09(el menor de los pares y el mayor de los negativos ...solo si hay)
 
-
-
-Al presionar el botón pedir  números  hasta que el usuario quiera,
-mostrar el número máximo y el número mínimo ingresado.*/
 function mostrar()
 
-
-
 {
-
-	var edadIngresada
-	var	nombreIngresado
-	var	edadMinima
-	var	edadMaxima
-	var	banderaDelPrimero
-
-	
-	
-	banderaDelPrimero="es el primero"
-	respuesta="si"
-	 
-		edadIngresada=parseInt(prompt("Ingrese su edad"));
-		nombreIngresado=prompt("Ingrese su nombre ")
-
-	while(respuesta=="si")
-	{	
-
-	
-		
-		while(isNaN(edadIngresada)==true)
-		{
-			edadIngresada=parseInt(prompt("ERROR :Ingrese un numero"));
-		}
-		if(banderaDelPrimero == "es el primero")
-		{
-			edadMinima = edadIngresada; 
-			edadMaxima = edadIngresada; 
-			banderaDelPrimero = "NO, no es el primero"
-		}else
-		{
-			if(edadIngresada<edadMinima)
-			{
-				edadMinima = edadIngresada; 
-			}
-	
-			if(edadIngresada>edadMaxima)
-			{		
-				edadMaxima = edadIngresada;
-			}
-
-			
-		}
-
-			respuesta=prompt("desea agregar otra persona ?")
-
-	}
-
-			 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*
 	var	numeroIngresado
-	var	numeroMaximo
-	var	numeroMinimo
+	var	numeroMayorNegativo
+	var	numeroMenorPares
 	var respuesta
-	var banderaDelPrimero
+	var banderaDelMayor
+	var banderaDelMenor
 
-	banderaDelPrimero="es el primero"
 
-	respuesta="si"
+	banderaDelMayor=0;
+	banderaDelMenor=0;
+	respuesta="si";
 
 	while(respuesta=="si")
 	{
@@ -94,31 +25,51 @@ function mostrar()
 		
 		while(isNaN(numeroIngresado)==true)
 		{
-			numeroIngresado=parseInt(prompt("EROR :Ingrese un numero"));
+			numeroIngresado=prompt("EROR :Ingrese un numero");
+			numeroIngresado=parseInt(numeroIngresado)
+
 		}
-		if(banderaDelPrimero == "es el primero")
+
+
+		if (numeroIngresado<0) 
+
 		{
-			numeroMinimo = numeroIngresado; 
-			numeroMaximo = numeroIngresado; 
-			banderaDelPrimero = "NO, no es el primero"
-		}else
-		{
-			if(numeroIngresado<numeroMinimo)
-			{
-				numeroMinimo = numeroIngresado; 
-			}
-	
-			if(numeroIngresado>numeroMaximo)
-			{
-				numeroMaximo = numeroIngresado; 
-			}	
+
+			if(banderaDelMayor = 0 || numeroIngresado <numeroMayorNegativo)
+				{
+							numeroMayorNegativo = numeroIngresado;
+					
+							
+							banderaDelMayor = 1; 
+				}else
+				{
+
+				}
 		}
-		
+		if (numeroIngresado%2==0)
+		 {
+
+
+			if(banderaDelMenor = 0 || numeroIngresado < numeroMenorPares)
+						{
+							numeroMenorPares = numeroIngresado;
+						
+							banderaDelMenor = 1; 
+						}else
+						{
+
+						}
+
+
+		}
+
+
+
 		
 		respuesta=prompt("desea ingresar otro numero ?")
 	}
 
-		document.getElementById("txtIdMaximo").value = numeroMaximo;
-		document.getElementById("txtIdMinimo").value = numeroMinimo; */
-//FIN DE LA FUNCIÓN
+		console.log("el numero par minimo es igual" +numeroMenorPares);
+		console.log("el numero mayor de los negativos " +numeroMayorNegativo);
+}//FIN DE LA FUNCIÓN
 	

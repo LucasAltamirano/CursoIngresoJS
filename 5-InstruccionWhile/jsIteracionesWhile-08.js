@@ -1,12 +1,15 @@
 /*
+
+	//ALTAMIRANO LUCAS EJERCICIO WHILE NUMERO 8
+
 Al presionar el botón pedir  números  hasta que el usuario quiera,
 sumar los que son positivos y multiplicar los negativos.*/
+
 
 function mostrar()
 {	
 	var numeroIngresado
 	var	acumulador
-
 	var respuesta
 	var contador
 	var banderadenegativos
@@ -14,6 +17,7 @@ function mostrar()
 
 	contador=0;
 	sumapositivos=0;
+	multiplicacionNegativos=1;
 	respuesta = "si"
 
 	banderadenegativos=1
@@ -25,11 +29,9 @@ function mostrar()
 		while(isNaN(numeroIngresado)==true)
 		{
 			numeroIngresado=parseInt(prompt("EROR :Ingrese un numero"));
-
 		}
 
-		contador=contador+1
-		
+		contador=contador+1	
 
 		if (numeroIngresado>-1)
 		 {
@@ -38,21 +40,15 @@ function mostrar()
 		 else
 		 {
 		 	banderadenegativos=1
-		 	 multiplicacionNegativos = multiplicacionNegativos * numero; 
-		 	 if (banderaDeNegativo==0)
+		 	 multiplicacionNegativos = multiplicacionNegativos * numeroIngresado; 
+		 	 if (banderadenegativos==0)
 			{
 				multiplicacionNegativos = 0; 
 			}
 
-
 		 }
 
-		 
-
-
-		 
-
-			respuesta=prompt("quiere ingresar otro numero?");	
+		respuesta=prompt("quiere ingresar otro numero?");	
 		console.log(contador)
 	}
 

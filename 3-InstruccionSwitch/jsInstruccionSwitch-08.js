@@ -23,8 +23,8 @@ function mostrar()
 		default:
 			alert("CALOR")		// otra solucion mandando por default
 			break;
-
+ 
 
 	}
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓ

@@ -10,6 +10,7 @@ function mostrar()
 	var porcentaje
 	var precioFinal
 	var mensaje
+	var
 
 	estacionIngresada=document.getElementById('txtIdEstacion').value;
 	destinoIngresado=document.getElementById("txtIdDestino").value;
